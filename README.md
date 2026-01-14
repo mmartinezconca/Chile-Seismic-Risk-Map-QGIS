@@ -1,34 +1,40 @@
-# Chile — Seismic Risk Map (QGIS GIS Workflow)
+# Seismic Risk Context Mapping of Chile (2004-2024)
 
-## Tools and Skills
-A practical **GIS mapping workflow** that integrates seismic hazard zones with developed land-use layers to support **field planning, risk communication, and geotechnical/environmental insight**.
-
----
-
-## What this project demonstrates
-- Spatial data integration and masking/clipping workflows
-- Symbolizing **developed areas** using grouped commercial & industrial land use
-- Kernel Density Estimation (KDE) visualization clipped to region masks
-- Organized map layout and clear legend design for rapid stakeholder interpretation
-- QA-aligned geospatial documentation and layer consistency
+## Summary
+This project maps earthquake activity in Chile from 2004-2024 and places it in context with population centers, emergency hospitals, and tectonic plate boundaries. The visualization highlights where high seismic concentration overlaps with urban areas and critical infrastructure, using clear, defensible, cartographic design.
 
 ---
 
-## Workflow summary
-1. Prepared seismic hazard layers and region mask
-2. Generated and clipped KDE visualization using the mask
-3. Integrated developed land-use layers for “urban/developed” symbology
-4. Applied consistent labeling, symbology, and legend clarity for communication
-5. Exported map layouts for presentation and field planning context
+## What This Shows
+- Earhquakes (M 4.0-8.8) visualized by magnitude
+- Kernel Density Estimation (KDE) of earthquake occurrence, shown as percentiles
+- Major population centers and hospitals with emergency services
+- Nazca-South America subduction zone
+- Inset map of central Chile for high-detail context
+
+**Note:** KDE represents relative concentration, not hazard or probability.
 
 ---
 
-## Key Outcomes
-- High-resolution seismic risk maps for Chile
+## Data & Methods
+- **Earthquake data:** USGS Earthquake Catalog (2004-2024)
+- **Healthcare & infrastructure:** OpenStreetMap
+- **Population centers:** OpenStreetMap
+- **CRS:** EPSG:5361 (SIRGAS-Chile 2002)
 
-This project is intentionally scoped as a **skill-building, applied GIS product** to demonstrate field-services readiness and geospatial execution workflows used in consulting environments.
+Earthquake epicenters were summarized using KDE and classified by percentiles to emphasize spatial patterns while avoiding false precision. Contextual were added to support interpretation of potential exposure rather than risk modeling.
 
 ---
 
-*Built with QGIS. Future updates will expand additional field-focused GIS workflows and QA checks.*
+## Why This Matters
+- Chike is one of the most esismically active regions in the world. This map demonstrates how spatial analysis and thoughful cartography can be used to communicate seismic context and exposure in a clear, professional way.
+
+---
+
+## Tools
+- QGIS 3.44
+- QuickOSM
+- GDAL (via QGIS Processing)
+
+
 
