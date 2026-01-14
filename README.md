@@ -1,12 +1,15 @@
 # Seismic Risk Context Mapping of Chile (2004-2024)
 
 ## Summary
+
+![Seismic risk context map of Chile](figures/chile_seismic_context_map.png)
+
+
+
+
 This project maps earthquake activity in Chile from 2004-2024 and places it in context with population centers, emergency hospitals, and tectonic plate boundaries. The visualization highlights where high seismic concentration overlaps with urban areas and critical infrastructure, using clear, defensible, cartographic design.
 
 ---
-
-![Seismic risk context map of Chile](figures/chile_seismic_context_map.png)
-*Seismic hazard and risk context in Chile (2004–2024).*
 
 ## What This Shows
 - Earhquakes (M 4.0-8.8) visualized by magnitude
